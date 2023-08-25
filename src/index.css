@@ -1,0 +1,75 @@
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+:root {
+	--background-primary: #fff;
+	--background-second: #f9f9f9;
+	--button-positive-hover: #54ff6b;
+	--light-green: #8ff07cff;
+	--light-green-2: #84ec9fff;
+	--aquamarine: #78e7c2ff;
+	--second-color: #97deff;
+	--primary-color: #37c3ff;
+	--primary-color-pasive-elements: #7cbaf0;
+	--primary-color-pasive-hover: #2b9cfe;
+	--prussian-blue: #1d2d44ff;
+	--font-size-titles: 30px;
+	--font-size-subtitles: 20px;
+	--font-size-text: 14px;
+	--margin-top-for-titles: 80px;
+	--margin-top-mobile: 60px;
+	--color-opositive: #000;
+	--color-map-pasive: #d3d3d3
+}
+/*************** TAMAÑOS LETRAS VARIABLE  *********************/
+
+[data-font='normal']{
+	--font-size-titles: 30px;
+    --font-size-subtitles: 20px;
+	--font-size-text: 14px;
+	--margin-top-for-titles: 80px
+}
+[data-font='medium']{
+	--font-size-titles: 36px;
+    --font-size-subtitles: 28px;
+	--font-size-text: 22px;
+	--margin-top-for-titles: 90px;
+}
+[data-font='big']{
+	--font-size-titles: 38px;
+    --font-size-subtitles: 34px;
+	--font-size-text: 27px;
+	--margin-top-for-titles: 100px;
+}
+
+/************** PALETA DE COLORES VARIABLE  *********************/
+[data-theme='dark']{
+	--background-primary: #121212;
+	--background-second: #232323;
+	color: #fff;
+	--color-opositive: #fff;
+	--color-map-pasive: #695353;
+}
+[data-theme='light']{
+	--background-primary: #fff;
+	--background-second: #f9f9f9;
+	--color-opositive: #000;
+}
+body {
+  background-color: var(--background-second);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont,  'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: var(--font-size-text);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
